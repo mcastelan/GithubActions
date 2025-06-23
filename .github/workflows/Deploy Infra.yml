@@ -28,6 +28,7 @@ jobs:
             type: deployment
             name: Development
             operation: create
+            scope: subscription
             subscription-id: ${{ secrets.AZURE_SUBSCRIPTION  }}
             resource-group-name:  ${{ env.resourceGroupName }}
             template-file: ./infra/templates/deploy_envt.bicep
