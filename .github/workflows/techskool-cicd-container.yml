@@ -67,7 +67,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: demo010.azurecr.io/${{ env.REPO }}:${{ github.sha }}
+          tags: mcastelandemo010.azurecr.io/${{ env.REPO }}:${{ github.sha }}
           file: ./WebApplication02/Dockerfile
 
 
