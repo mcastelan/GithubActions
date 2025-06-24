@@ -29,10 +29,7 @@ name: TechSkool-Container deploy
 env:
   AZURE_WEBAPP_NAME: techskool  # set this to the name of your Azure Web App
 
-defaults:
-  run:
-    shell: bash
-    working-directory: ./WebApplication02
+
 on:
   push:
     branches: [ "main" ]
